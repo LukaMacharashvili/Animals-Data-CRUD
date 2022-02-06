@@ -1,0 +1,62 @@
+.input {
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.forms-area {
+    align-items: center;
+}
+
+.cards-area {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+.card {
+    margin: 20px;
+    max-width: 400px;
+}
+
+.card img {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.buttons-area {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.card:hover>.buttons-area {
+    top: 10px;
+    opacity: 1;
+}
+
+.modal-body img {
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+
+@media (max-width:970px) {
+    .card {
+        max-width: 200px;
+    }
+}
+
+@media (max-width:700px) {
+    .cards-area {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:470px) {
+    .cards-area {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
