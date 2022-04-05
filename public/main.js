@@ -150,7 +150,7 @@ class HtmlWorker {
         response.forEach(animal => {
             let animalItem = animal.data();
             animalItem.id = animal.id;
-            cardsArea.innerHTML = self.generateAnimalCard(animalItem);
+            cardsArea.innerHTML += self.generateAnimalCard(animalItem);
             console.log(animalItem)
         })
     }
